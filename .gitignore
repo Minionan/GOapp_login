@@ -1,0 +1,23 @@
+# Aider files
+.aider*
+.env
+
+# Configuration
+session_key.txt
+
+# Database
+db/*.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Compiled binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Log files
+*.log
