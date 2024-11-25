@@ -1,8 +1,12 @@
 # GOapp_login
 
+This is a simple login session handling app written with GO.
+It is a good start for creating your own web app where login functionality is required.
+The app by default stores user data using SQLite database.
+
 ## Setup
 
-1. Clone the repository 
+Clone the repository with `git clone https://github.com/Minionan/GOapp_login.git`
 
 ### Setting session_key
 
