@@ -21,3 +21,6 @@ db/*.db
 
 # Log files
 *.log
+
+# Backup
+/backup 
