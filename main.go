@@ -28,7 +28,7 @@ func init() {
 	}
 
 	// Parse templates
-	tpl = template.Must(template.ParseGlob("templates/*.html"))
+	tpl = template.Must(template.ParseGlob("pages/*.html"))
 
 	// Initialize session store
 	store = sessions.NewCookieStore(secret)
@@ -83,7 +83,7 @@ func main() {
 	http.HandleFunc("/logout", logoutHandler)
 
 	// Serve static files
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	http.Handle("/css/", http.StripPrefix("/css/", http.FileServer(http.Dir("css"))))
 
 	fmt.Println("Server started at http://localhost:8080")
 	log.Fatal(http.ListenAndServe(":8080", nil))
